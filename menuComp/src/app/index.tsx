@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import MyComponent from "../../Components/MyComponent";
 //this is where we import components that are provided
 //by RN. Notice they start wit ha capital letter
 // Forgetting to import is a super common error
@@ -6,7 +7,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Menu theme={{ colors: { primary: "green" } }} />
+      <MyComponent />
       <Text style={styles.titleText}>Mobile Apps</Text>
       <Text style={styles.bodyText}>Alex</Text>
     </View>
