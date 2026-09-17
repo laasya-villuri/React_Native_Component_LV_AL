@@ -9,7 +9,7 @@ export default function Index() {
     <View style={styles.container}>
       <MyComponent />
       <Text style={styles.titleText}>Mobile Apps</Text>
-      <Text style={styles.bodyText}>Alex</Text>
+      <Text style={styles.bodyText}>Alex and Laasya</Text>
     </View>
   );
 }
