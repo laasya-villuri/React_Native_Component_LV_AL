@@ -2,6 +2,12 @@ import * as React from "react";
 import { View } from "react-native";
 import { Menu } from "react-native-paper";
 
+const [visible, setVisible] = React.useState(false);
+
+const openMenu = () => setVisible(true);
+
+const closeMenu = () => setVisible(false);
+
 const MyComponent = () => (
   <View style={{ flex: 1 }}>
     <Menu.Item leadingIcon="redo" onPress={() => {}} title="Redo" />
