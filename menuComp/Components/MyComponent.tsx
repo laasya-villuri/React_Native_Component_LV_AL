@@ -10,21 +10,10 @@ const closeMenu = () => setVisible(false);
 
 const MyComponent = () => (
   <View style={{ flex: 1 }}>
-    <Menu.Item leadingIcon="redo" onPress={() => {}} title="Redo" />
-    <Menu.Item leadingIcon="undo" onPress={() => {}} title="Undo" />
-    <Menu.Item
-      leadingIcon="content-cut"
-      onPress={() => {}}
-      title="Cut"
-      disabled
-    />
-    <Menu.Item
-      leadingIcon="content-copy"
-      onPress={() => {}}
-      title="Copy"
-      disabled
-    />
-    <Menu.Item leadingIcon="content-paste" onPress={() => {}} title="Paste" />
+    <Menu.Item leadingIcon="Add" onPress={() => {}} title="Donate" />
+    <Menu.Item leadingIcon="Remove" onPress={() => {}} title="Send to Zoo" />
+    <Menu.Item leadingIcon="Close" onPress={() => {}} title="Adopt" />
+    <Menu.Item leadingIcon="Close" onPress={() => {}} title="Close" />
   </View>
 );
 

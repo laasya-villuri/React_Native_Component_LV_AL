@@ -3,10 +3,14 @@
   "compilerOptions": {
     "jsx": "react-native",
     "strict": true,
+    
     "paths": {
       "@/*": ["./src/*"],
       "@/assets/*": ["./assets/*"]
     }
+  },
+  "expo": {
+    "plugins": ["@react-native-vector-icons/entypo"]
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }
