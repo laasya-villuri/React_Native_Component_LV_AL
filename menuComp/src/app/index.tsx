@@ -11,10 +11,6 @@ import * as React from "react";
 export default function Index() {
   const [visible, setVisible] = React.useState(false);
 
-  const openMenu = () => setVisible(true);
-
-  const closeMenu = () => setVisible(false);
-
   const handleVisible = () => {
     setVisible(!visible);
   };
