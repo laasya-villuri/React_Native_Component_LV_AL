@@ -1,19 +1,27 @@
 import * as React from "react";
-import { View } from "react-native";
+import { Alert, View } from "react-native";
 import { Menu } from "react-native-paper";
-
-const [visible, setVisible] = React.useState(false);
-
-const openMenu = () => setVisible(true);
-
-const closeMenu = () => setVisible(false);
 
 const MyComponent = () => (
   <View style={{ flex: 1 }}>
-    <Menu.Item leadingIcon="Add" onPress={() => {}} title="Donate" />
-    <Menu.Item leadingIcon="Remove" onPress={() => {}} title="Send to Zoo" />
-    <Menu.Item leadingIcon="Close" onPress={() => {}} title="Adopt" />
-    <Menu.Item leadingIcon="Close" onPress={() => {}} title="Close" />
+    <Menu.Item
+      onPress={() => {
+        Alert.alert("This is not enough");
+      }}
+      title="Donate"
+    />
+    <Menu.Item
+      onPress={() => {
+        Alert.alert("Absolutely Not");
+      }}
+      title="Send to Zoo"
+    />
+    <Menu.Item
+      onPress={() => {
+        Alert.alert("We'll send her right away!");
+      }}
+      title="Adopt"
+    />
   </View>
 );
 

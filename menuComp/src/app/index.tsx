@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import MyComponent from "../../Components/MyComponent";
 import { useState } from "react";
+import AntDesign from "@expo/vector-icons/AntDesign";
 import MyButton from "../../Components/MyButton";
 import * as React from "react";
 
@@ -14,6 +15,7 @@ export default function Index() {
   const handleVisible = () => {
     setVisible(!visible);
   };
+
   return (
     <View style={styles.container}>
       <Text style={styles.titleText}>Help the Sloth</Text>
@@ -22,8 +24,10 @@ export default function Index() {
         <Image source={require("../../assets/images/pics/sloth.png")} />
 
         <MyButton
-          text="Open Menu"
+          text="Menu"
           radius={10}
+          fontSize={20}
+          width={200}
           onPress={() => {
             handleVisible();
           }}
@@ -43,6 +47,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "lightblue",
   },
   titleText: {
     fontSize: 28, // notice no '' around numerical values
