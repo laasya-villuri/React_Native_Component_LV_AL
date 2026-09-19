@@ -20,18 +20,28 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.titleText}>Help the Sloth</Text>
       <Text style={styles.bodyText}>Alex and Laasya</Text>
+
       <View>
         <Image source={require("../../assets/images/pics/sloth.png")} />
-
-        <MyButton
-          text="Menu"
-          radius={10}
-          fontSize={20}
-          width={200}
-          onPress={() => {
-            handleVisible();
-          }}
-        />
+        <View style={styles.row}>
+          <MyButton
+            text="Menu"
+            radius={10}
+            fontSize={20}
+            width={200}
+            onPress={() => {
+              handleVisible();
+            }}
+          />
+          <AntDesign
+            name="menu"
+            size={27}
+            color="black"
+            onPress={() => {
+              handleVisible();
+            }}
+          />
+        </View>
         {visible && <MyComponent />}
       </View>
     </View>
@@ -58,5 +68,8 @@ const styles = StyleSheet.create({
   bodyText: {
     fontSize: 18,
     color: "#338855",
+  },
+  row: {
+    flexDirection: "row",
   },
 });

@@ -51,7 +51,6 @@ const MyButton: React.FC<propsType> = ({
       underlayColor={"purple"}
     >
       <View style={styles.row}>
-        <AntDesign name="menu" size={24} color="lightblue" />
         <Text style={[styles.buttonText, { color: color, fontSize: fontSize }]}>
           {text}
         </Text>
