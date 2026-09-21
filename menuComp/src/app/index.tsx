@@ -5,10 +5,6 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import MyButton from "../../Components/MyButton";
 import * as React from "react";
 
-//this is where we import components that are provided
-//by RN. Notice they start wit ha capital letter
-// Forgetting to import is a super common error
-
 export default function Index() {
   const [visible, setVisible] = React.useState(false);
 
